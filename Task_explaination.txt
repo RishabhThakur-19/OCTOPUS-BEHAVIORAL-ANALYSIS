@@ -1,0 +1,31 @@
+Task Objective
+The objective of this task was to analyze a short video of an aquatic organism, preferably a cephalopod, and extract interpretable features that capture behavioral dynamics over time. The emphasis was on demonstrating a clear understanding of data handling, feature engineering, and behavioral reasoning, rather than relying on complex models.
+
+Approach
+The solution follows a structured and reproducible pipeline. The video was first loaded using OpenCV, and key metadata such as frame rate (FPS), resolution, total frames, and duration were extracted to establish the temporal context of the data.
+
+Each frame was then preprocessed by resizing and converting it to grayscale, ensuring computational efficiency while preserving essential structural information. Based on this processed data, two meaningful and interpretable features were extracted: motion magnitude and contour area. These features were stored as NumPy arrays for efficient reuse and reproducibility. Finally, the extracted signals were visualized over time to reveal patterns of activity and behavioral transitions.
+
+Extracted Features
+
+Motion Magnitude
+Motion magnitude quantifies the level of activity by measuring frame-to-frame pixel differences. It effectively captures temporal changes in the scene, providing a strong indicator of movement intensity. High values correspond to active behaviors such as exploration, reaction, or stress, while low values indicate stillness, such as resting or camouflage. This feature serves as a robust proxy for overall activity.
+
+Contour Area
+Contour area estimates the visible body size of the octopus by identifying the largest contour in each frame. It reflects changes in posture, such as expansion, contraction, or concealment. Larger contour areas typically correspond to stretched or expressive states, while smaller areas indicate compact or hidden configurations. This feature captures structural and postural dynamics of the organism.
+
+Behavioral Interpretation
+Individually, these features provide partial insights; however, their combination enables a more nuanced understanding of behavior. High motion combined with large contour area suggests strong active responses or environmental interaction. High motion with smaller contour area may indicate rapid or cautious movement. Low motion with large contour area reflects alert but stationary states, while low motion with small contour area indicates resting or camouflaging behavior.
+
+Together, motion magnitude and contour area form a complementary representation of activity and posture, enabling a meaningful interpretation of behavioral states over time.
+
+Limitations
+Despite its effectiveness as a baseline, this approach has inherent limitations. Motion magnitude does not differentiate between subject movement and background disturbances. Contour-based methods are sensitive to lighting variations and scene complexity. Additionally, the current features do not capture fine-grained biological signals such as individual limb dynamics, color and texture modulation, or environmental interactions. As a result, behavioral inference remains approximate and lacks deeper semantic understanding.
+
+Improvements with Additional Modalities
+The analysis can be significantly enhanced through multi-modal integration. Optical flow can provide detailed spatial and directional motion patterns. Posture estimation techniques can enable fine-grained tracking of body parts such as tentacles. Color and texture analysis are particularly important for cephalopods, as they encode camouflage and signaling behaviors. Incorporating environmental context can help identify external stimuli driving behavior, while temporal modeling can capture long-term patterns and transitions.
+
+These additions would elevate the system from basic observation to a more comprehensive and causally informed behavioral analysis framework.
+
+Final Conclusion
+This work presents a simple yet effective and interpretable pipeline for analyzing cephalopod behavior using motion and contour-based features. While intentionally minimal to align with task constraints, the approach successfully captures key behavioral signals such as activity and posture. With the integration of advanced feature extraction and multi-modal modeling, this framework can be extended into a more powerful system capable of deeper and more accurate behavioral understanding.
