@@ -44,7 +44,7 @@ Behavioral neuroscience and ethology benefit most from methods where the link be
 ## 📁 Repository Structure
 
 ```
-cephalopo-behavior-analysis/
+OCTOPUS-BEHAVIORAL-ANALYSIS
 │
 ├── DATASET/
 │   └── 3836204455-preview.mp4        # Octopus video footage (Shutterstock)
