@@ -4,7 +4,7 @@
 > **GSoC 2026 Entry Task** — Extracting interpretable behavioral signals from video data using pure classical computer vision, without specialized models such as C3D, SlowFast, or I3D.
 
 ---
-## 💬 MY's Note
+## 💬 Author's Note
 
 While this entry task focuses on simple and interpretable features, I am comfortable working with more advanced approaches, including deep learning and multi-modal modeling. I chose to keep the implementation straightforward to align with the task requirements and ensure clarity and reproducibility.
 
@@ -44,13 +44,13 @@ Behavioral neuroscience and ethology benefit most from methods where the link be
 ## 📁 Repository Structure
 
 ```
-cephalopo-behavior-analysis/
+OCTOPUS-BEHAVIORAL-ANALYSIS
 │
 ├── DATASET/
 │   └── 3836204455-preview.mp4        # Octopus video footage (Shutterstock)
 │
-├── notebooks/
-│   └── cephalopod_analysis.ipynb     # Full analysis notebook (feature extraction + plots)
+├── TASK.ipynb                      # Full analysis notebook (feature extraction + plots)
+│       
 │
 ├── requirements.txt
 └── README.md
@@ -308,14 +308,6 @@ Regions where both lines are elevated together indicate active, expanded behavio
 | **Environmental Context (Object Detection)** | Links behavioral states to environmental triggers — prey, predators, shelter |
 | **3D Reconstruction** | Enables volumetric body shape analysis from multi-camera setups |
 | **Automated Ethogram Generation** | Produces annotated behavioral timelines comparable to expert human annotation |
-
----
-
-## 💬 Author's Note
-
-While this entry task focuses on simple and interpretable features, I am comfortable working with more advanced approaches, including deep learning and multi-modal modeling. I chose to keep the implementation straightforward to align with the task requirements and ensure clarity and reproducibility.
-
-If given the opportunity to work on the full project, I would be excited to extend this pipeline with more sophisticated techniques — spatiotemporal models, improved feature extraction, and multi-modal integration — to achieve higher accuracy and deeper behavioral understanding.
 
 
 ---
