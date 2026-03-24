@@ -4,7 +4,7 @@
 > **GSoC 2026 Entry Task** — Extracting interpretable behavioral signals from video data using pure classical computer vision, without specialized models such as C3D, SlowFast, or I3D.
 
 ---
-## 💬 MY's Note
+## 💬 MY Note
 
 While this entry task focuses on simple and interpretable features, I am comfortable working with more advanced approaches, including deep learning and multi-modal modeling. I chose to keep the implementation straightforward to align with the task requirements and ensure clarity and reproducibility.
 
