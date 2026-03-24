@@ -49,8 +49,8 @@ OCTOPUS-BEHAVIORAL-ANALYSIS
 ├── DATASET/
 │   └── 3836204455-preview.mp4        # Octopus video footage (Shutterstock)
 │
-├── notebooks/
-│   └── cephalopod_analysis.ipynb     # Full analysis notebook (feature extraction + plots)
+├── TASK.ipynb                      # Full analysis notebook (feature extraction + plots)
+│       
 │
 ├── requirements.txt
 └── README.md
