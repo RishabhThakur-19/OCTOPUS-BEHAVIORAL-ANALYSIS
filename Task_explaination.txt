@@ -1,4 +1,4 @@
-Task Objective:
+Task Objective
 The objective of this task was to analyze a short video of an aquatic organism, preferably a cephalopod, and extract interpretable features that capture behavioral dynamics over time. The emphasis was on demonstrating a clear understanding of data handling, feature engineering, and behavioral reasoning, rather than relying on complex models.
 
 Approach
